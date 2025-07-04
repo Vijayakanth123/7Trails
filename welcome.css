@@ -1,0 +1,29 @@
+#headerz{
+    display: flex;
+    justify-content: space-between;
+    height: 14vh;
+}
+
+#lefthead{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+#righthead{
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+}
+
+#main{
+    text-align: center;
+    align-content: center;
+    height: 69vh;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 14vh;
+}
