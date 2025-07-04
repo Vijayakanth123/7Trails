@@ -1,3 +1,36 @@
+
+body{
+    background-image: url(background1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+p{
+    margin: 0;
+}
+
+
+#txt7tr{
+    font-size: 150px;
+    color: #de9837de;
+    font-family: "Frijole", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#go_button{
+    background-color: #de9837de;
+    color: #f3e9d2;
+    font-size: medium;
+    height: 25px;
+    border: 0;
+    border-radius: 12px;
+    width: 60px;
+    position: relative;
+    bottom: 25px;
+}
+
+
 #headerz{
     display: flex;
     justify-content: space-between;
@@ -26,4 +59,14 @@ footer{
     display: flex;
     justify-content: space-between;
     height: 14vh;
+}
+
+@media (max-width: 820px) {
+        #txt7tr{
+            font-size: 50px;
+        }
+
+        #go_button{
+            bottom: 0;
+        }
 }
