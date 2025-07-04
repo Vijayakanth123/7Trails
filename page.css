@@ -1,0 +1,46 @@
+#gamename{
+    font-size: 100px;
+}
+
+#gamespace{
+    display: flex;
+    align-content: stretch;
+}
+
+#leftContainer{
+    flex: 1;
+}
+
+#rightContainer{
+    flex: 1;
+}
+
+#middle{
+    flex: 2;
+    max-width: 450px;
+    height: 340px;
+    overflow: auto;
+}
+
+.number{
+    display: flex;
+    justify-content: center;
+}
+
+.cell{
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    border: 1px solid rgb(42, 42, 42) ;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.422);
+    cursor: pointer;
+    font-size: xx-large;
+    text-align: center;
+    caret-color: transparent;
+    align-content: center;
+}
+
+.cell_focussed{
+    border: 2px solid rgb(0, 0, 0) ;
+}
