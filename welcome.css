@@ -3,6 +3,11 @@ body{
     background-image: url(background1.png);
     background-size: cover;
     background-position: center;
+    margin: 0;
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 200;
+    font-style: normal;
+    color: #8a9a5b;
 }
 
 p{
@@ -28,36 +33,55 @@ p{
     width: 60px;
     position: relative;
     bottom: 25px;
+    text-align: left;
+    padding-right: 3px;
+    animation: widthblober 2s infinite;
 }
 
+
+#arrow{
+    position: relative;
+    animation: moveitem 2s infinite;
+}
 
 #headerz{
     display: flex;
     justify-content: space-between;
-    height: 14vh;
+    height: 4vh;
+    padding: 10px 4px 0 4px;
 }
 
 #lefthead{
     display: flex;
-    justify-content: space-between;
-    width: 200px;
 }
 
 #righthead{
     display: flex;
     justify-content: space-around;
-    width: 100px;
+    width: min(40vw,150px);
+}
+
+.header_buttons{
+    font-family: "Fascinate Inline", system-ui;
+    font-weight: 200;
+    font-style: normal;
+    color: #8a9a5b;
+    /* height: fit-content; */
+    padding: 4px;
+    background-color: transparent;
+    border: 1px solid #8a9a5b;
 }
 
 #main{
     text-align: center;
     align-content: center;
-    height: 69vh;
+    height: 79vh;
 }
 
 footer{
     display: flex;
     justify-content: space-between;
+    align-items: end;
     height: 14vh;
 }
 
@@ -69,4 +93,32 @@ footer{
         #go_button{
             bottom: 0;
         }
+}
+
+@keyframes widthblober{
+    0%{
+        width: 60px;
+        left: 0;
+    }
+    50%{
+        width: 84px;
+        left: 12px;
+    }
+    100%{
+        width: 60px;
+        left: 0px;
+    }
+    
+}
+
+@keyframes moveitem{
+    0%{
+        left: 0px;
+    }
+    50%{
+        left: 24px;
+    }
+    100%{
+        left: 0px;
+    }
 }
